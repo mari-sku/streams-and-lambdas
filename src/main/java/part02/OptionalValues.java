@@ -30,7 +30,9 @@ public class OptionalValues {
          * is empty.
          */
 
-        return -1; // TODO
+         return stream.average().orElse(0.0);
+
+     // TODO
     }
 
     /**
@@ -41,6 +43,6 @@ public class OptionalValues {
      * @return the maximum value in the stream or 0 if the stream is empty
      */
     public int maximum(IntStream stream) {
-        return -1; // TODO: see the IntStream documentation
+        return stream.max().orElse(0); // TODO: see the IntStream documentation
     }
 }

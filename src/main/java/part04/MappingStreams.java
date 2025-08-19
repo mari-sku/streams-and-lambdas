@@ -31,7 +31,8 @@ public class MappingStreams {
      */
     public IntStream doubleValuesInStream(IntStream numbers) {
         // hint: use the map() method to double the values in the stream.
-        return null; // TODO
+       return numbers.map(x -> x * 2);
+       
     }
 
     /**
